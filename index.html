@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css">
+    <title>Pokémon</title>
+  </head>
+  <body>
+    
+    <div class="parent" id="tela">
+      <!-- Canto esquerdo(BAG e TREINADOR) -->
+      <div class="div1" id="div1">
+        <div id="bag">
+          <div class="bag-icon">
+            <img src="icons/bag.png">
+            <h1><u>BAG</u></h1>
+          </div>
+          <hr>
+          <div class="itens">
+            <button onclick="evoluir()" id="pedra_evoluir">
+              <img src="icons/pedra.png">
+            </button>
+            <p id="p_frase_pedra">x99 pedras de evolução</p>
+          </div>
+          <div class="itens">
+            <button onclick="capturar()" id="capturar_poke">
+              <img src="icons/pokebolas.png">
+            </button>
+            <p id="p_frase_pokebolas">x99 Pokebolas</p>
+          </div>
+          <button onclick="resetarPokemon()" id="reset">
+            <img src="icons/de-volta.png" width="30px">
+          </button>   
+        </div>
+        <div class="logo" id="logo">
+          <img src="frases/pokemon.webp" width="95%">
+        </div>
+          <div id="treinador">
+            <img src="treinador/treinadorEstatico.png">
+          </div>
+      </div>
+
+      <!-- Tela-meio(POKEMON) -->
+      <div class="div2" id="div2">        
+        <div id="pokemon">
+          <!-- Pokemon -->
+        </div>
+        <div id="atk_final"></div>
+        <div id="detalhes"></div> 
+        <div id="musica_tema">
+          <audio preload="auto" autoplay>
+            <source src="audio/pokemon_sound_track.mp3" type="audio/mpeg">
+          </audio>
+        </div>       
+        <div id="audiopoke"></div>
+      </div>
+
+      <!-- Canto direito(ESCOLHER POKEMONS) -->
+      <div class="div3" id="div3">
+        <div class="info_poke" id="info_poke">
+          <img src="icons/icon-pokebolas.png">
+          <p><u>Pokemons</u></p>
+        </div>
+        <div class="group-button" id="group_button">
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.001</p>
+            </div>
+            <button onclick="escolher_bulbassaur()" value="1" id="button_bulbasaur">
+              <img src="pokemons/button/bulbasaur.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.004</p>
+            </div>
+            <button onclick="escolher_charmander()" value="2" id="button_charmander">
+            <img src="pokemons/button/charmander.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.007</p>
+            </div>
+            <button onclick="escolher_squirtle()" value="3" id="button_squirtle">
+            <img src="pokemons/button/squirtle.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.010</p>
+            </div>
+            <button onclick="escolher_caterpie()" value="4" id="button_caterpie">
+            <img src="pokemons/button/caterpie.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.013</p>
+            </div>
+            <button onclick="escolher_weedle()" value="5" id="button_weedle">
+            <img src="pokemons/button/weedle.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.016</p>
+            </div>
+            <button onclick="escolher_pidgey()" value="6" id="button_pidgey">
+            <img src="pokemons/button/pidgey.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.029</p>
+            </div>
+            <button onclick="escolher_nidoranF()" value="7" id="button_nidoran_f">
+            <img src="pokemons/button/nidoran-f.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.032</p>
+            </div>
+            <button onclick="escolher_nidoranM()" value="8" id="button_nidoran_m">
+            <img src="pokemons/button/nidoran-m.png">
+            </button>
+          </div>        
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.063</p>
+            </div>
+            <button onclick="escolher_abra()" value="10" id="button_abra">
+            <img src="pokemons/button/abra.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.066</p>
+            </div>
+            <button onclick="escolher_machop()" value="11" id="button_machop">
+            <img src="pokemons/button/machop.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.092</p>
+            </div>
+            <button onclick="escolher_gastly()" value="12" id="button_gastly">
+            <img src="pokemons/button/gastly.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.132</p>
+            </div>
+            <button onclick="escolher_ditto()" value="15" id="button_ditto">
+            <img src="pokemons/button/ditto.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.133</p>
+            </div>
+            <button onclick="escolher_eevee()" value="9" id="button_eevee">
+            <img src="pokemons/button/eevee.png">
+            </button>
+          </div>
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.147</p>
+            </div>
+            <button onclick="escolher_dratini()" value="13" id="button_dratini">
+            <img src="pokemons/button/dratini.png">
+            </button>
+          </div>         
+          <div class="card">
+            <div class="banner_poke">
+              <img src="icons/poke1.png">
+              <p>Nº.151</p>
+            </div>
+            <button onclick="escolher_mew()" value="14" id="button_mew">
+            <img src="pokemons/button/mew.png">
+            </button>
+          </div>         
+        </div>
+      </div>
+
+      <!-- Tela-baixo(FRASES-AÇÕES) -->
+      <div class="div4" id="div4">
+        <div id="frase_evolution">
+          <img src="frases/padrao.png">
+        </div>  
+      </div>   
+
+      </div>
+  </body>
+</html>
+
+<script>
+  // VARIAVEIS USADAS NOS ARQ.JS
+  var intervalo = 0;
+  var contador = 50;
+  var idPokemon = 0;
+  var pedrasEvolucao = 99;
+  var pokebolas = 99;
+</script>
+
+<script src="escolher_pokemon.js"></script>
+<script src="evoluir.js"></script>
+<script src="pokemon_evoluir.js"></script>
+<script src="capturar.js"></script>
+<script src="resetar.js"></script>
+<script src="ataque_especial.js"></script>

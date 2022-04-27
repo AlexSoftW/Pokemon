@@ -1,0 +1,313 @@
+/* RESETANDO PADRÕES DO SITE */
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap");
+* {
+   margin: 0;
+   padding: 0;
+   font-family: "Source Code Pro", monospace;
+}
+
+/* DIV QUE ENGLOBA TODAS AS DIVS */
+.parent {
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   grid-template-rows: repeat(5, 1fr);
+   grid-column-gap: 0px;
+   grid-row-gap: 0px;
+   min-height: 100vh;
+}
+
+/* CANTO ESQUERDO(BAG E TREINADOR) */
+.div1 {
+   grid-area: 1 / 1 / 6 / 2;
+   background-image: url("background/fundo_later.png");
+   display: flex;
+   align-items: center;
+   flex-direction: column;
+   justify-content: space-between;
+   transition: all 5s ease-in-out;
+}
+
+.div1 #bag {
+   display: flex;
+   flex-direction: column;
+   background-color: aliceblue;
+   border: 6px solid #295069db;
+   border-top-left-radius: 55px;
+   margin: 5px;
+   width: 80%;
+   margin: auto;
+}
+
+#bag .bag-icon {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   position: relative;
+   width: 80%;
+   margin-left: -15%;
+   font-size: large;
+   letter-spacing: 8px;
+   color: #295069;
+}
+
+#bag .bag-icon img {
+   width: 30%;
+   border: 2px solid black;
+   border-radius: 50px;
+}
+
+#bag .bag-icon u {
+   font-size: 25px;
+   font-family: "Press Start 2P", cursive;
+}
+
+#bag .itens {
+   display: flex;
+   align-items: center;
+   margin: 5px 0 0 5px;
+}
+
+#bag .itens button {
+   cursor: pointer;
+   border: none;
+   width: 20%;
+   margin-right: 5px;
+}
+#bag .itens button img {
+   width: 100%;
+}
+
+.div1 #treinador img {
+   width: 200px;
+}
+
+/* TELA-MEIO(POKEMONS) */
+.div2 {
+   grid-area: 1 / 2 / 5 / 5;
+   display: flex;
+   flex-direction: column-reverse;
+   align-items: center;
+   justify-content: space-evenly;
+   background-image: url("background/fundo2.jpg");
+   background-size: cover;
+   transition: all 5s ease-in-out;
+}
+
+.div2 .detalhe_pokemon {
+   position: absolute;
+   display: flex;
+   align-items: center;
+   right: 48%;
+   bottom: 90%;
+   width: 30%;
+   padding: 10px;
+   background-color: #2d2d2d80;
+   border-radius: 5px;
+}
+
+.div2 .detalhe_pokemon p {
+   font-family: "Press Start 2P", cursive;
+   color: whitesmoke;
+   letter-spacing: 4px;
+   font-size: 20px;
+   margin-left: 5px;
+}
+
+@media (max-width: 900px) {
+   #pokemon {
+      display: flex;
+      width: 70%;
+      align-items: center;
+      justify-content: center;
+   }
+
+   #pokemon img {
+      width: 100%;
+   }
+}
+
+/* CANTO DIREITO(ESCOLHER POKEMON) */
+.div3 {
+   grid-area: 1 / 5 / 6 / 6;
+   background-image: url("background/fundo_later.png");
+   transition: all 5s ease-in-out;
+}
+
+.div3 .info_poke {
+   display: flex;
+   align-items: center;
+   border: 3px solid #ebb21d;
+   border-bottom-left-radius: 25px;
+   border-bottom-right-radius: 25px;
+   background-color: #fff6bd;
+}
+
+.div3 .info_poke u {
+   font-family: "Press Start 2P", cursive;
+   margin-left: 10%;
+   font-size: 1.1rem;
+   letter-spacing: 4px;
+   color: #295069;
+}
+
+.div3 .group-button {
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-evenly;
+}
+
+.div3 .group-button .card {
+   cursor: pointer;
+   width: 30%;
+   height: max-content;
+   cursor: pointer;
+   border: 1px solid rgb(33, 33, 33);
+   border-radius: 8px;
+   margin-top: 10px;
+   transition: all 0.3s ease-in-out;
+}
+
+.card .banner_poke {
+   display: flex;
+   align-items: center;
+   background-color: plum;
+   font-size: small;
+   border-top-left-radius: 8px;
+   border-top-right-radius: 8px;
+}
+
+.div3 .group-button button {
+   cursor: pointer;
+   border: none;
+   border-bottom-left-radius: 8px;
+   border-bottom-right-radius: 8px;
+   background-color: rgb(255, 241, 255);
+}
+.div3 .group-button .card:hover {
+   transform: scale(110%, 110%);
+}
+
+.div3 .group-button button img {
+   width: 80%;
+}
+
+/* TELA-BAIXO(FRASE-AÇÕES) */
+.div4 {
+   grid-area: 5 / 2 / 6 / 5;
+   background-color: #295069;
+   transition: all 5s ease-in-out;
+}
+
+.div4 #frase_evolution {
+   display: flex;
+   height: 135px;
+   justify-content: center;
+}
+
+.div4 #frase_evolution img {
+   width: 80%;
+}
+
+/* ATK MEWTWO */
+#atk_mewtwo {
+   cursor: pointer;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   height: 15vh;
+   font-family: "Press Start 2P", cursive;
+   font-size: 16px;
+   letter-spacing: 2px;
+   border: 8px solid #4a486c;
+   border-radius: 20px;
+   background-color: whitesmoke;
+   color: rgb(27, 27, 27);
+   transition: all 0.4s ease-in-out;
+}
+
+#blob {
+   background: #8257ad;
+   border-radius: 20px;
+   margin: 10px;
+   height: 15vh;
+   width: 100%;
+
+   box-shadow: 0 0 0 0 #8257ad;
+   transform: scale(1);
+   animation: pulse 2s infinite;
+}
+
+@keyframes pulse {
+   0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 #c897fad7;
+   }
+   70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px #c897fa11;
+   }
+   100% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 #c897fa00;
+   }
+}
+
+#pokemon img:hover {
+   /* animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both; */
+   transform: translate3d(0, 0, 0);
+   backface-visibility: hidden;
+   perspective: 1000px;
+}
+
+@keyframes shake {
+   10%, 90% {
+      transform: translate3d(5px, 0, 0);
+   }
+
+   20%, 80% {
+      transform: translate3d(-10px, 0, 0);
+   }
+
+   30%, 50%, 70% {
+      transform: translate3d(15px, 0, 0);
+   }
+
+   40%, 60% {
+      transform: translate3d(-10px, 0, 0);
+   }
+}
+
+#atk_final {
+   position: absolute;
+   display: flex;
+   width: 50%;
+   height: 50vh;
+   justify-content: center;
+}
+
+#atk_final img {
+   width: 80%;
+}
+
+#atk_final .atk_esquerdo {
+   display: flex;
+   justify-content: flex-end;
+   align-items: center;
+   width: 33%;
+}
+
+#atk_final .atk_meio {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 33%;
+}
+
+#atk_final .atk_direito {
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   width: 33%;
+}
