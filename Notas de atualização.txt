@@ -1,0 +1,23 @@
+26/04/2022
+*Implementando pela 1° vez no ar, arquivos Pokemon.*
+
+---NOTAS DE ATUALIZAÇÃO---
+
+27/04/2022: Arrumando BUG da pokebola(arremessavel).
+
+
+
+
+---UPDATES FUTUROS---
+
+-Implementar site inteiramente responsivo(Telas menores e mobile).
+-Adicionar sistema de batalha.
+-Menu interativo(Usuario escolher entre a opção existente[Capturar e evoluir] e
+[Modo batalha]).
+
+*
+Se gostar do meu trabalho e quiser tirar alguma duvida entre em contato.
+meu email: [1alex.contato@gmail.com] 
+ou 
+meu linkedin: [https://www.linkedin.com/in/alex-silva-32a43620b/]
+*
