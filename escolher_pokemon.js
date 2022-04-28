@@ -19,7 +19,7 @@ function escolher_bulbassaur() {
                          </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif" width='200px'>`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_bulbasaur.value;
@@ -45,7 +45,7 @@ function escolher_charmander() {
                          </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_charmander.value;
@@ -70,7 +70,7 @@ function escolher_squirtle() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_squirtle.value;
@@ -95,7 +95,7 @@ function escolher_caterpie() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_caterpie.value;
@@ -121,7 +121,7 @@ function escolher_weedle() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_weedle.value;
@@ -147,7 +147,7 @@ function escolher_pidgey() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_pidgey.value;
@@ -172,7 +172,7 @@ function escolher_nidoranF() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_nidoran_f.value;
@@ -197,7 +197,7 @@ function escolher_nidoranM() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_nidoran_m.value;
@@ -228,7 +228,7 @@ function escolher_eevee() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_eevee.value;
@@ -253,7 +253,7 @@ function escolher_abra() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_abra.value;
@@ -278,7 +278,7 @@ function escolher_machop() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_machop.value;
@@ -304,7 +304,7 @@ function escolher_gastly() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_gastly.value;
@@ -329,7 +329,7 @@ function escolher_dratini() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_dratini.value;
@@ -354,7 +354,7 @@ function escolher_mew() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_mew.value;
@@ -385,7 +385,7 @@ function escolher_ditto() {
                        </div> `;
    }, 1400);
 
-   pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+   pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
    treinador.innerHTML = `<img src="treinador/treinador.gif">`;
    frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    idPokemon = button_ditto.value;
