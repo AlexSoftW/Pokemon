@@ -1,12 +1,17 @@
-26/04/2022
+                  ---{26/04/2022}---
 *Implementando pela 1° vez no ar, arquivos Pokemon.*
 
 ---NOTAS DE ATUALIZAÇÃO---
 
-27/04/2022: Arrumando BUG da pokebola(arremessavel).
+27/04/2022: 1. Arrumando BUG da pokebola(arremessavel).
 
+07/05/2022: 1. colocando validações [capturar || evoluir] Pokémon: 
+*caso você não escolha um Pokémon, ele irá avisar:*
+caso o número de [Pokebolas || pedras de evolução] 
+chegue a 0 você não irá mais conseguir [capturar || evoluir].
 
-
+2. Melhorias no código:
+retirando arquivos iguais (Redundância), tornando o código mais clean.
 
 ---UPDATES FUTUROS---
 
