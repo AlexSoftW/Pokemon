@@ -196,7 +196,7 @@ function escolherPokemon(){
       }, 1400);
    
       //GIF JOGANDO POKEBOLA
-      pokemon.innerHTML = `<img src="efeitos/poke.gif" width='120px'>`;
+      pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif" width='120px'>`;
       treinador.innerHTML = `<img src="treinador/treinador.gif" width='200px'>`;
       frase_evolution.innerHTML = `<img src="frases/padrao.png">`;
    }

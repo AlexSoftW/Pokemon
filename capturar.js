@@ -28,7 +28,7 @@ function esperando_capturar() {
       capturar_poke.disabled = true;
       contador += 1;
       if (contador >= 50 && contador < 100) {
-         pokemon.innerHTML = `<img src="efeitos/poke.gif">`;
+         pokemon.innerHTML = `<img src="efeitos/jogar_pokebola.gif">`;
       } else if (contador >= 100 && contador < 130) {
          pokemon.innerHTML = `<img src="efeitos/pokebola1.gif">`;
       } else if (contador >= 130 && contador < 400) {
