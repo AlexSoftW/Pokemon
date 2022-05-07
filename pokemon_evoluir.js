@@ -306,19 +306,19 @@ function eevee() {
          select_pokemon = 'vaporeon';
          name_And_audio_pokemon = 'Vaporeon';
          type_pokemon = 'water'
-         type_pokemon = 'not_a_icon';
+         type2_pokemon = 'not_a_icon';
 
       } else if(evolucao_aleatoria == 2){
          select_pokemon = 'jolteon';
          name_And_audio_pokemon = 'Jolteon';
          type_pokemon = 'electr'
-         type_pokemon = 'not_a_icon';
+         type2_pokemon = 'not_a_icon';
          
       } else if(evolucao_aleatoria == 3){
          select_pokemon = 'flareon';
          name_And_audio_pokemon = 'Flareon';
          type_pokemon = 'fire'
-         type_pokemon = 'not_a_icon';
+         type2_pokemon = 'not_a_icon';
       }
       
       pokemon.innerHTML = `<img src='pokemons/${select_pokemon}.gif' width='${contador}px'>`;
