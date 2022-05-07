@@ -1,490 +1,268 @@
+var contador = 50;
+
 //POKEMON 1
 function bulbasaur() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/bulbasaur.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/yvisaur.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ivysaur.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Ivysaur</p>
-                               <img src="icons/grass.png" width="15%">
-                               <img src="icons/poison.png" width="16%">
-                           </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/venossauro.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/venusaur.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Venusaur</p>
-                             <img src="icons/grass.png" width="15%">
-                             <img src="icons/poison.png" width="16%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                             <source src="audio/Venusaur(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'bulbasaur'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'ivysaur'; 
+      name_And_audio_pokemon = 'Ivysaur';
+      type_pokemon = 'grass';
+      type2_pokemon = 'poison';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'venusaur'; 
+      name_And_audio_pokemon = 'Venusaur';
+      type_pokemon = 'grass';
+      type2_pokemon = 'poison';
    }
 }
 
 //POKEMON 2
 function charmander() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/charmander.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/charmeleon.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/charmeleon.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Charmeleon</p>
-                               <img src="icons/fire.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/charizard.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/charizard.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Charizard</p>
-                             <img src="icons/fire.png" width="15%">
-                             <img src="icons/flying.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Charizard(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'charmander'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'charmeleon'; 
+      name_And_audio_pokemon = 'Charmeleon';
+      type_pokemon = 'fire';
+      type2_pokemon = 'not_a_icon';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'charizard'; 
+      name_And_audio_pokemon = 'Charizard';
+      type_pokemon = 'fire';
+      type2_pokemon = 'flying';
    }
 }
 
 //POKEMON 3
 function squirtle() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/squirtle.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/wartortle.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/wartortle.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Wartortle</p>
-                               <img src="icons/water.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/blastoise.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/blastoise.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Blastoise</p>
-                             <img src="icons/water.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Blastoise(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'squirtle'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'wartortle'; 
+      name_And_audio_pokemon = 'Wartortle';
+      type_pokemon = 'water';
+      type2_pokemon = 'not_a_icon';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'blastoise'; 
+      name_And_audio_pokemon = 'Blastoise';
+      type_pokemon = 'water';
+      type2_pokemon = 'not_a_icon';
    }
 }
 
 //POKEMON 4
 function caterpie() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/caterpie.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/metapod.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/metapod.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Metapod</p>
-                               <img src="icons/bug.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/butterfree.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/butterfree.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Butterfree</p>
-                             <img src="icons/bug.png" width="15%">
-                             <img src="icons/flying.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Butterfree(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'caterpie'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'metapod'; 
+      name_And_audio_pokemon = 'Metapod';
+      type_pokemon = 'bug';
+      type2_pokemon = 'not_a_icon';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'butterfree'; 
+      name_And_audio_pokemon = 'Butterfree';
+      type_pokemon = 'bug';
+      type2_pokemon = 'flying';
    }
 }
 
 //POKEMON 5
 function weedle() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/weedle.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/kakuna.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/kakuna.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Kakuna</p>
-                               <img src="icons/bug.png" width="15%">
-                               <img src="icons/poison.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/beedrill.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/beedrill.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Beedrill</p>
-                             <img src="icons/bug.png" width="15%">
-                             <img src="icons/poison.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Beedrill(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'weedle'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'kakuna'; 
+      name_And_audio_pokemon = 'Kakuna';
+      type_pokemon = 'bug';
+      type2_pokemon = 'poison';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'beedrill'; 
+      name_And_audio_pokemon = 'Beedrill';
+      type_pokemon = 'bug';
+      type2_pokemon = 'poison';
    }
 }
 
 //POKEMON 6
 function pidgey() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/pidgey.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/pidgeotto.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/pidgeotto.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Pidgeotto</p>
-                               <img src="icons/normal.png" width="15%">
-                               <img src="icons/flying.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/pidgeot.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/pidgeot.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Pidgeot</p>
-                             <img src="icons/normal.png" width="15%">
-                             <img src="icons/flying.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Pidgeot(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'pidgey'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'pidgeotto'; 
+      name_And_audio_pokemon = 'Pidgeotto';
+      type_pokemon = 'normal';
+      type2_pokemon = 'flying';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'pidgeot'; 
+      name_And_audio_pokemon = 'Pidgeot';
+      type_pokemon = 'normal';
+      type2_pokemon = 'flying';
    }
 }
 
 //POKEMON 7
 function nidoranF() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/nidoranF.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/nidorina.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/nidorina.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Nidorina</p>
-                               <img src="icons/poison.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/nidoqueen.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/nidoqueen.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Nidoqueen</p>
-                             <img src="icons/poison.png" width="15%">
-                             <img src="icons/ground.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Nidoqueen(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'nidoranF'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'nidorina'; 
+      name_And_audio_pokemon = 'Nidorina';
+      type_pokemon = 'poison';
+      type2_pokemon = 'not_a_icon';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'nidoqueen'; 
+      name_And_audio_pokemon = 'Nidoqueen';
+      type_pokemon = 'poison';
+      type2_pokemon = 'ground';
    }
 }
 
 //POKEMON 8
 function nidoranM() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/nidoranM.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/nidorino.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/nidorino.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Nidorino</p>
-                               <img src="icons/poison.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/nidoking.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/nidoking.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Nidoking</p>
-                             <img src="icons/poison.png" width="15%">
-                             <img src="icons/ground.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Nidoking(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'nidoranM'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'nidorino'; 
+      name_And_audio_pokemon = 'Nidorino';
+      type_pokemon = 'poison';
+      type2_pokemon = 'not_a_icon';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'nidoking'; 
+      name_And_audio_pokemon = 'Nidoking';
+      type_pokemon = 'poison';
+      type2_pokemon = 'ground';
    }
 }
 
 //POKEMON 9
-function eevee() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   }  else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/eevee.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if(contador >= 190 && contador < 270){
-      if(evolucao_aleatoria == 1){
-         pokemon.innerHTML = `<img src='pokemons/vaporeon.gif' width='${contador}px'>`;
-         frase_evolution.innerHTML = `<img src="frases/vaporeon.png">`;
-         detalhes.innerHTML = `<div class="detalhe_pokemon">
-                              <img src="icons/poke-tag.png" width="8%">
-                              <p>Vaporeon</p>
-                              <img src="icons/water.png" width="15%">
-                              </div> `;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                              <source src="audio/Vaporeon(Cry).mp3" type="audio/mpeg">
-                              </audio>`;
-      } else if(evolucao_aleatoria == 2){
-         pokemon.innerHTML = `<img src='pokemons/jolteon.gif' width='${contador}px'>`;
-         frase_evolution.innerHTML = `<img src="frases/jolteon.png">`;
-         detalhes.innerHTML = `<div class="detalhe_pokemon">
-                              <img src="icons/poke-tag.png" width="8%">
-                              <p>Jolteon</p>
-                              <img src="icons/electr.png" width="15%">
-                              </div> `;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                              <source src="audio/Jolteon(Cry).mp3" type="audio/mpeg">
-                              </audio>`;
-      } else if(evolucao_aleatoria == 3){
-         pokemon.innerHTML = `<img src='pokemons/flareon.gif' width='${contador}px'>`;
-         frase_evolution.innerHTML = `<img src="frases/flareon.png">`;
-         detalhes.innerHTML = `<div class="detalhe_pokemon">
-                              <img src="icons/poke-tag.png" width="8%">
-                              <p>Flareon</p>
-                              <img src="icons/fire.png" width="15%">
-                              </div> `;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                              <source src="audio/Flareon(Cry).mp3" type="audio/mpeg">
-                              </audio>`;
-      }
+function abra() {
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'abra'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'kadabra'; 
+      name_And_audio_pokemon = 'Badabra';
+      type_pokemon = 'psychc';
+      type2_pokemon = 'not_a_icon';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'alakazam'; 
+      name_And_audio_pokemon = 'Alakazam';
+      type_pokemon = 'psychc';
+      type2_pokemon = 'not_a_icon';
    }
 }
 
 //POKEMON 10
-function abra() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/abra.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/kadabra.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/kadabra.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Kadabra</p>
-                               <img src="icons/psychc.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/alakazam.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/alakazam.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Alakazam</p>
-                             <img src="icons/psychc.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Alakazam(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+function machop() {
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'machop'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'machoke'; 
+      name_And_audio_pokemon = 'Machoke';
+      type_pokemon = 'fight';
+      type2_pokemon = 'not_a_icon';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'machamp'; 
+      name_And_audio_pokemon = 'Machamp';
+      type_pokemon = 'fight';
+      type2_pokemon = 'not_a_icon';
    }
 }
 
 //POKEMON 11
-function machop() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/machop.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/machoke.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/machoke.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Machoke</p>
-                               <img src="icons/fight.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/machamp.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/machamp.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Machamp</p>
-                             <img src="icons/fight.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Machamp(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
-   }
-}
-
-//POKEMON 12
 function gastly() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/gastly.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/haunter.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/haunter.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Haunter</p>
-                               <img src="icons/ghost.png" width="15%">
-                               <img src="icons/poison.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/gengar.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/gengar.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Gengar</p>
-                             <img src="icons/ghost.png" width="15%">
-                             <img src="icons/poison.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Gengar(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
-   }
-}
-
-//POKEMON 13
-function dratini() {
-   contador += 1;
-   pedra_evoluir.disabled = true;
-   if (contador >= 50 && contador < 90) {
-      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
-   } else if (contador >= 90 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/dratini.gif" width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
-   } else if (contador >= 160 && contador < 190) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 190 && contador < 270) {
-      pokemon.innerHTML = `<img src='pokemons/dragonair.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/dragonair.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                               <img src="icons/poke-tag.png" width="8%">
-                               <p>Dragonair</p>
-                               <img src="icons/dragon.png" width="15%">
-                             </div> `;
-   } else if (contador >= 270 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
-   } else if (contador >= 300 && contador < 380) {
-      pokemon.innerHTML = `<img src='pokemons/dragonite.gif' width='${contador}px'>`;
-      frase_evolution.innerHTML = `<img src="frases/dragonite.png">`;
-      detalhes.innerHTML = `<div class="detalhe_pokemon">
-                             <img src="icons/poke-tag.png" width="8%">
-                             <p>Dragonite</p>
-                             <img src="icons/dragon.png" width="15%">
-                             <img src="icons/flying.png" width="15%">
-                           </div> `;
-      audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Dragonite(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'gastly'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'haunter'; 
+      name_And_audio_pokemon = 'Haunter';
+      type_pokemon = 'ghost';
+      type2_pokemon = 'poison';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'gengar'; 
+      name_And_audio_pokemon = 'Gengar';
+      type_pokemon = 'ghost';
+      type2_pokemon = 'poison';
    }
 }
 
 //POKEMON 14
+function dratini() {
+   pokemon_escolhido();
+   if(contador >= 90 && contador < 160){
+      select_pokemon = 'dratini'; 
+   } else if(contador >= 170 && contador < 270){
+      select_pokemon = 'dragonair'; 
+      name_And_audio_pokemon = 'Dragonair';
+      type_pokemon = 'dragon';
+      type2_pokemon = 'not_a_icon';
+   } else if(contador >= 280 && contador < 380){
+      select_pokemon = 'dragonite'; 
+      name_And_audio_pokemon = 'Dragonite';
+      type_pokemon = 'dragon';
+      type2_pokemon = 'flying';
+   }
+}
+
+//FUNÇÃO QUE EVOLUI O POKEMON ESCOLHIDO
+function pokemon_escolhido(){
+   contador += 1;
+   pedra_evoluir.disabled = true;
+   capturar_poke.disabled = true;
+   
+
+      if (contador >= 50 && contador < 90) {
+         pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
+      } else if (contador >= 90 && contador < 160) {
+         pokemon.innerHTML = `<img src="pokemons/${select_pokemon}.gif" width='${contador}px'>`;
+         frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
+      } else if (contador >= 160 && contador < 190) {
+         pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
+      } else if (contador >= 190 && contador < 270) {
+         pokemon.innerHTML = `<img src='pokemons/${select_pokemon}.gif' width='${contador}px'>`;
+         frase_evolution.innerHTML = `<img src="frases/${select_pokemon}.png">`;
+         detalhes.innerHTML = `<div class="detalhe_pokemon">
+                                  <img src="icons/poke-tag.png" width="8%">
+                                  <p>${name_And_audio_pokemon}</p>
+                                  <img src="icons/${type_pokemon}.png" width="15%">
+                                  <img src="icons/${type2_pokemon}.png" width="16%">
+                              </div> `;
+      } else if (contador >= 270 && contador < 300) {
+         pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
+      } else if (contador >= 300 && contador < 380) {
+         pokemon.innerHTML = `<img src='pokemons/${select_pokemon}.gif' width='${contador}px'>`;
+         frase_evolution.innerHTML = `<img src="frases/${select_pokemon}.png">`;
+         detalhes.innerHTML = `<div class="detalhe_pokemon">
+                                <img src="icons/poke-tag.png" width="8%">
+                                <p>${name_And_audio_pokemon}</p>
+                                <img src="icons/${type_pokemon}.png" width="15%">
+                                <img src="icons/${type2_pokemon}.png" width="16%">
+                              </div> `;
+         audiopoke.innerHTML = `<audio preload="auto" autoplay>
+                                <source src="audio/${name_And_audio_pokemon}(Cry).mp3" type="audio/mpeg">
+                              </audio>`;
+                           
+   }
+}
+
+//*----POKEMON ESPECIAIS----*//
 function mew() {
    contador += 1;
    pedra_evoluir.disabled = true;
+   capturar_poke.disabled = true;
+
    if (contador >= 50 && contador < 90) {
       pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
    } else if (contador >= 90 && contador < 220) {
@@ -511,10 +289,57 @@ function mew() {
    }
 }
 
+function eevee() {
+   contador += 1;
+   pedra_evoluir.disabled = true;
+   capturar_poke.disabled = true;
+
+   if (contador >= 50 && contador < 90) {
+      pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
+   }  else if (contador >= 90 && contador < 160) {
+      pokemon.innerHTML = `<img src="pokemons/eevee.gif" width='${contador}px'>`;
+      frase_evolution.innerHTML = `<img src="frases/evoluindo.png">`;
+   } else if (contador >= 160 && contador < 190) {
+      pokemon.innerHTML = `<img src="efeitos/evoluir.gif" width='${contador}px'>`;
+   } else if(contador >= 190 && contador < 270){
+      if(evolucao_aleatoria == 1){
+         select_pokemon = 'vaporeon';
+         name_And_audio_pokemon = 'Vaporeon';
+         type_pokemon = 'water'
+         type_pokemon = 'not_a_icon';
+
+      } else if(evolucao_aleatoria == 2){
+         select_pokemon = 'jolteon';
+         name_And_audio_pokemon = 'Jolteon';
+         type_pokemon = 'electr'
+         type_pokemon = 'not_a_icon';
+         
+      } else if(evolucao_aleatoria == 3){
+         select_pokemon = 'flareon';
+         name_And_audio_pokemon = 'Flareon';
+         type_pokemon = 'fire'
+         type_pokemon = 'not_a_icon';
+      }
+      
+      pokemon.innerHTML = `<img src='pokemons/${select_pokemon}.gif' width='${contador}px'>`;
+      frase_evolution.innerHTML = `<img src="frases/${select_pokemon}.png">`;
+      detalhes.innerHTML = `<div class="detalhe_pokemon">
+                              <img src="icons/poke-tag.png" width="8%">
+                              <p>${name_And_audio_pokemon}</p>
+                              <img src="icons/${type_pokemon}.png" width="15%">
+                              <img src="icons/${type2_pokemon}.png" width="15%">
+                           </div> `;
+      audiopoke.innerHTML = `<audio preload="auto" autoplay>
+                              <source src="audio/${name_And_audio_pokemon}(Cry).mp3" type="audio/mpeg">
+                           </audio>`;
+   }
+}
+
 //POKEMON 15
 function ditto() {
    contador += 1;
    pedra_evoluir.disabled = true;
+   capturar_poke.disabled = true;
 
    if (contador >= 50 && contador < 90) {
       pokemon.innerHTML = `<img src="efeitos/evolve.gif" width='95px'>`;
@@ -522,186 +347,116 @@ function ditto() {
       pokemon.innerHTML = `<img src="pokemons/bulbasaur.gif" width='95px'>`;
       frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
    } else if (contador >= 100 && contador < 120) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;    
    } else if (contador >= 120 && contador < 130) {
-      pokemon.innerHTML = `<img src="pokemons/charmander.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="pokemons/charmander.gif" width='95px'>`;    
    } else if (contador >= 130 && contador < 150) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;     
    } else if (contador >= 150 && contador < 160) {
-      pokemon.innerHTML = `<img src="pokemons/squirtle.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="pokemons/squirtle.gif" width='95px'>`;     
    } else if (contador >= 160 && contador < 180) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;      
    } else if (contador >= 180 && contador < 190) {
-      pokemon.innerHTML = `<img src="pokemons/caterpie.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="pokemons/caterpie.gif" width='95px'>`;     
    } else if (contador >= 190 && contador < 210) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;    
    } else if (contador >= 210 && contador < 220) {
-      pokemon.innerHTML = `<img src="pokemons/weedle.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="pokemons/weedle.gif" width='95px'>`;    
    } else if (contador >= 220 && contador < 240) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;     
    } else if (contador >= 240 && contador < 250) {
-      pokemon.innerHTML = `<img src="pokemons/pidgey.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="pokemons/pidgey.gif" width='95px'>`;     
    } else if (contador >= 250 && contador < 270) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;     
    } else if (contador >= 270 && contador < 280) {
-      pokemon.innerHTML = `<img src="pokemons/nidoranF.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="pokemons/nidoranF.gif" width='95px'>`;    
    } else if (contador >= 280 && contador < 300) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;    
    } else if (contador >= 300 && contador < 310) {
-      pokemon.innerHTML = `<img src="pokemons/nidoranM.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="pokemons/nidoranM.gif" width='95px'>`;     
    } else if (contador >= 310 && contador < 330) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;     
    } else if (contador >= 330 && contador < 340) {
-      pokemon.innerHTML = `<img src="pokemons/eevee.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador >= 330 && contador < 350) {
+      pokemon.innerHTML = `<img src="pokemons/eevee.gif" width='95px'>`;     
+   } else if (contador >= 340 && contador < 360) {
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;    
+   } else if (contador >= 360 && contador < 370) {
+      pokemon.innerHTML = `<img src="pokemons/abra.gif" width='95px'>`;     
+   } else if (contador >= 370 && contador < 390) {
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;    
+   } else if (contador >= 390 && contador < 400) {
+      pokemon.innerHTML = `<img src="pokemons/machop.gif" width='95px'>`;     
+   } else if (contador >= 400 && contador < 420) {
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;     
+   } else if (contador >= 420 && contador < 430) {
+      pokemon.innerHTML = `<img src="pokemons/gastly.gif" width='95px'>`;      
+   } else if (contador >= 430 && contador < 450) {
       pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador >= 350 && contador < 360) {
-      pokemon.innerHTML = `<img src="pokemons/abra.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador >= 360 && contador < 380) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador >= 380 && contador < 390) {
-      pokemon.innerHTML = `<img src="pokemons/machop.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador >= 390 && contador < 410) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador >= 410 && contador < 420) {
-      pokemon.innerHTML = `<img src="pokemons/gastly.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador >= 420 && contador < 440) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador >= 440 && contador < 450) {
+   } else if (contador >= 450 && contador < 460) {
       pokemon.innerHTML = `<img src="pokemons/dratini.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador >= 450 && contador < 470) {
-      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;
-      frase_evolution.innerHTML = `<img src="frases/ditto.png">`;
-   } else if (contador > 470) {
+   } else if (contador >= 460 && contador < 480) {
+      pokemon.innerHTML = `<img src="efeitos/ditto_transform.gif" width='95px'>`;  
+   } else if (contador >= 480) {
       audiopoke.innerHTML = "";
       if (idPokemon == 1) {
-         pokemon.innerHTML = `<img src="pokemons/bulbasaur.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-bulbasaur.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Bulbasaur(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'bulbasaur';
+         name_And_audio_pokemon = 'Bulbasaur';            
+
       } else if (idPokemon == 2) {
-         pokemon.innerHTML = `<img src="pokemons/charmander.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-charmander.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                           <source src="audio/Charmander(Cry).mp3" type="audio/mpeg">
-                           </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'charmander';
+         name_And_audio_pokemon = 'Charmander';
+
       } else if (idPokemon == 3) {
-         pokemon.innerHTML = `<img src="pokemons/squirtle.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-squirtle.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/Squirtle(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'squirtle';
+         name_And_audio_pokemon = 'Squirtle';
+
       } else if (idPokemon == 4) {
-         pokemon.innerHTML = `<img src="pokemons/caterpie.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-caterpie.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/Caterpie(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'caterpie';
+         name_And_audio_pokemon = 'Caterpie';
+
       } else if (idPokemon == 5) {
-         pokemon.innerHTML = `<img src="pokemons/weedle.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-weedle.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/Weedle(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'weedle';
+         name_And_audio_pokemon = 'Weedle';
+
       } else if (idPokemon == 6) {
-         pokemon.innerHTML = `<img src="pokemons/pidgey.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-pidgey.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/Pidgey(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'pidgey';
+         name_And_audio_pokemon = 'Pidgey';
+
       } else if (idPokemon == 7) {
-         pokemon.innerHTML = `<img src="pokemons/nidoranF.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-nidoranF.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/NidoranF(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'nidoranF';
+         name_And_audio_pokemon = 'NidoranF';
+
       } else if (idPokemon == 8) {
-         pokemon.innerHTML = `<img src="pokemons/nidoranM.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-nidoranM.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/NidoranM(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'nidoranM';
+         name_And_audio_pokemon = 'NidoranM';
+
       } else if (idPokemon == 9) {
-         pokemon.innerHTML = `<img src="pokemons/eevee.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-eevee.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/Eevee(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'eevee';
+         name_And_audio_pokemon = 'Eevee';
+
       } else if (idPokemon == 10) {
-         pokemon.innerHTML = `<img src="pokemons/abra.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-abra.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/Abra(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'abra';
+         name_And_audio_pokemon = 'Abra';
+
       } else if (idPokemon == 11) {
-         pokemon.innerHTML = `<img src="pokemons/machop.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-machop.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/Machop(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'machop';
+         name_And_audio_pokemon = 'Machop';
+
       } else if (idPokemon == 12) {
-         pokemon.innerHTML = `<img src="pokemons/gastly.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-gastly.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/Gastly(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'gastly';
+         name_And_audio_pokemon = 'Gastly';
+
       } else if (idPokemon == 13) {
-         pokemon.innerHTML = `<img src="pokemons/dratini.gif" width='95px'>`;
-         frase_evolution.innerHTML = `<img src="frases/ditto/ditto-dratini.png">`;
-         audiopoke.innerHTML = `<audio preload="auto" autoplay>
-                         <source src="audio/Dratini(Cry).mp3" type="audio/mpeg">
-                         </audio>`;
-         resetarDitto();
-         capturar_poke.disabled = false;
+         select_pokemon = 'dratini';
+         name_And_audio_pokemon = 'Dratini';
       }
+
+      pokemon.innerHTML = `<img src="pokemons/${select_pokemon}.gif" width='95px'>`;
+      frase_evolution.innerHTML = `<img src="frases/ditto/ditto-${select_pokemon}.png">`;
+      audiopoke.innerHTML = `<audio preload="auto" autoplay>
+                           <source src="audio/${name_And_audio_pokemon}(Cry).mp3" type="audio/mpeg">
+                           </audio>`;
+      resetarDitto();
+      capturar_poke.disabled = false;
    }
 }

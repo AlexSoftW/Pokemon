@@ -4,10 +4,9 @@ const tela2 = document.querySelector(".div2");
 const tela3 = document.querySelector(".div3");
 const tela4 = document.querySelector(".div4");
 
-function ataque_especial(){
+function ataque_especial() {
    frase_evolution.innerHTML = `<img src="./frases/mewtwo/mewtwo_atk.png">`;
    musica_tema.innerHTML = "";
-
    setTimeout(() => {
       atk_final.innerHTML = `
                            <div class="atk_esquerdo"></div>
@@ -16,30 +15,29 @@ function ataque_especial(){
                               <img src="efeitos/light_atk.gif">
                            </div>
                         `;
-  }, 1200);
+   }, 1200);
 
-  setTimeout(() => {   
+   setTimeout(() => {
       info_poke.style.display = "none";
       group_button.style.display = "none";
       atk_final.innerHTML = "";
-  }, 2000);
+   }, 2000);
 
-   
-  setTimeout(() => {
-   pokemon.style.transform = "rotateY(180deg)";
-   atk_final.innerHTML = `
+   setTimeout(() => {
+      pokemon.style.transform = "rotateY(180deg)";
+      atk_final.innerHTML = `
                         <div class="atk_esquerdo">
                            <img src="efeitos/light_atk.gif">
                         </div>
                         <div class="atk_meio"></div>
                         <div class="atk_direito"></div>
                      `;
-  }, 3200);
+   }, 3200);
 
    setTimeout(() => {
       bag.style.display = "none";
       logo.style.display = "none";
-      treinador.style.display = "none";    
+      treinador.style.display = "none";
       atk_final.innerHTML = "";
    }, 4000);
 
@@ -54,18 +52,17 @@ function ataque_especial(){
                         `;
    }, 5200);
 
-   setTimeout(() => {  
+   setTimeout(() => {
       frase_evolution.style.display = "none";
       detalhes.style.display = "none";
       atk_final.innerHTML = "";
    }, 6000);
-   
 
    setTimeout(() => {
       tela1.style.backgroundImage = `url("background/fundo_white.png")`;
       tela2.style.backgroundImage = `url("background/fundo_white.png")`;
       tela3.style.backgroundImage = `url("background/fundo_white.png")`;
-      tela4.style.backgroundColor = `white`;    
+      tela4.style.backgroundColor = `white`;
    }, 8000);
 
    setTimeout(() => {
@@ -87,7 +84,6 @@ function ataque_especial(){
                                  <source src="audio/efeitos/finish.mp3" type="audio/mpeg">
                               </audio>`;
       frase_evolution.style.display = "flex";
-      frase_evolution.innerHTML = `<img src="./frases/mewtwo/texto_derrotou_2.png">`;
+      frase_evolution.innerHTML = `<img src="./frases/mewtwo/texto_derrotou_1.png">`;
    }, 15000);
-   
 }

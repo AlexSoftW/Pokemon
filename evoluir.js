@@ -1,6 +1,22 @@
+var intervalo = 0;
+var pedrasEvolucao = 20;
+
 //BOTÃO DE EVOLUIR
-function evoluir() {
-   p_frase_pedra.innerHTML = `x${(pedrasEvolucao -= 1)} pedras de evolução`;
+function evoluir(){
+   if(idPokemon == 0){
+      alert("👷‍♂️: Escolha 1 pokémon antes de evoluir!")
+   } else{
+      p_frase_pedra.innerHTML = `x${(pedrasEvolucao -= 1)} pedras de evolução`;
+      if(pedrasEvolucao < 0){
+         alert("👷‍♂️: Suas pedras de evolução acabaram! 😢")
+         p_frase_pedra.innerHTML = `x0 pedras de evolução`;
+      } else{
+         verificar_evolucao();
+      }
+   }
+}
+
+function verificar_evolucao() {
    capturar_poke.disabled = true;
 
    if (idPokemon == 1) {
